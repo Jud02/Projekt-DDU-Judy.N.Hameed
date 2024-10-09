@@ -12,9 +12,7 @@ body {
     padding-right:20px ;
 }
 
-img {
-    max-width: 100%;
-}
+
 
 main {
     max-width: 1000px;
@@ -50,7 +48,7 @@ a {
     color: black;
 }
 
-#Get-Barky {
+.Get-Barky {
     background-color: black;
     color: white;
     padding: 6px;
@@ -58,5 +56,21 @@ a {
 }
 
 
+.sek1 {
+    display: flex;
+    margin: 100px auto;
+}
 
+#sek1left{
+    flex-basis: 50%;
+}
 
+#imagessek1 {
+}
+
+#image1 {
+    width: 100%;
+    height: auto;
+    flex-basis: 50%;
+
+}
