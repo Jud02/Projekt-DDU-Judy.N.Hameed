@@ -1,8 +1,62 @@
 body {
-    max-width: 1000px;
-    margin: 0 auto;
+    font-family: inter;
 }
+
+@font-face {
+    font-family:'Inter'; 
+    src: url(material/Inter.ttf); 
+}
+
+#line {
+    border-right: 2px solid gray;
+    padding-right:20px ;
+}
+
 img {
     max-width: 100%;
 }
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#Barky {
+    width: 100px;
+    height: auto;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: smaller;
+    color: black;
+}
+
+#Get-Barky {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+
+
 
