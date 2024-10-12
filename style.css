@@ -1,18 +1,11 @@
-body {
-    font-family: inter;
-}
-
 @font-face {
     font-family:'Inter'; 
     src: url(material/Inter.ttf); 
 }
 
-#line {
-    border-right: 2px solid gray;
-    padding-right:20px ;
+body {
+    font-family: inter;
 }
-
-
 
 main {
     max-width: 1000px;
@@ -25,7 +18,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    text-decoration: none;
+
 }
+
 #Barky {
     width: 100px;
     height: auto;
@@ -42,9 +38,14 @@ header{
     gap: 20px;
 }
 
+#line {
+    border-right: 2px solid gray;
+    padding-right:20px ;
+}
+
 a {
     text-decoration: none;
-    font-size: smaller;
+    font-size: small;
     color: black;
 }
 
@@ -65,12 +66,225 @@ a {
     flex-basis: 50%;
 }
 
-#imagessek1 {
+#imagesek1 {
+    flex-basis: 50%;
+
 }
 
 #image1 {
     width: 100%;
     height: auto;
-    flex-basis: 50%;
+}
+
+
+.logor {
+    padding: 15px;
+}
+.logorrad1 {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center; /* Centers horizontally */
 
 }
+
+#imgrad1 {
+    width: 100px;
+    height: auto;
+}
+
+#imgrad2 {
+    width: 90px;
+    height: auto;
+}
+
+.logorrad2 {
+    padding-top: 10px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center; /* Centers horizontally */
+
+}
+
+.sek2 {
+    margin: 100px auto;
+}
+.sek2 p {
+    width: 445px;
+    margin-bottom: 25px;
+}
+
+.sek2 h1 {
+    text-align: center;
+}
+
+#imgsek3sek4sek5 {
+    width: 100%;
+}
+
+.persons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.Face-image {
+    width: 60px;
+}
+
+.sek3 {
+    margin: 100px auto;
+
+}
+
+
+#sek3rubrik {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+#checkimg{
+    width: 20px;
+}
+
+.lista3 {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#rader{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    color: gray;
+}
+
+#rad10 {
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+
+.sek4 {
+    margin: 100px auto;
+}
+#Built{
+    text-align: center;
+    align-items: center; /* Centrerar dem vertikalt om deras höjd varierar */
+    justify-content: center; /* Centrerar dem horisontellt */
+
+}
+
+#Built h1 {
+    margin-bottom: 0;
+}
+
+#Built p {
+    font-size: small;
+    padding-bottom: 30px;
+}
+
+.Emojis {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#Box1, #lineemoji, #Box3 {
+    padding: 20px; /* Lägger till utrymme inuti boxarna */
+    text-align: center; /* Centrerar texten */
+    width: 400px; /* Ger varje box en specifik bredd */
+}
+
+#lineemoji {
+     border-right: 1px solid gray ;
+     border-left: 1px solid gray ;
+}
+
+.sek5 h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sek5 {
+    margin: 100px auto;
+    margin-bottom: 0px;
+}
+
+.sek5LR {
+    display: flex;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+#sek5left {
+    width: 450px;
+}
+
+#sek5right {
+    flex-basis: 50%;
+}
+
+
+#badges {
+    width: 100%;
+    height: auto;
+}
+
+.Procent{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.Procent p {
+    font-size: large;
+    margin: 0;
+}
+.bignumber {
+    font-size: 60px;
+    margin: 0;
+}
+
+.Endmain {
+    text-align: center;
+    padding: 50px;
+
+}
+
+.footer {
+    margin-top: 30PX;
+    display: flex;
+    justify-content: space-evenly;
+}
+#logofooter {
+    width: 155px;
+    margin-bottom: 20px;
+}
+
+#apps {
+    width: 30px;
+    margin-bottom: 40px;
+}
+
+#footer1 {
+    width: 300px;
+}
+
