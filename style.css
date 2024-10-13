@@ -7,6 +7,9 @@ body {
     font-family: inter;
 }
 
+.Gray {
+    color:#7f7f7f ;
+}
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -121,6 +124,8 @@ a {
 
 #imgsek3sek4sek5 {
     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+
 }
 
 .persons {
@@ -198,6 +203,9 @@ a {
     padding-bottom: 30px;
 }
 
+
+
+
 .Emojis {
     display: flex;
     text-align: center;
@@ -206,15 +214,16 @@ a {
 }
 
 #Box1, #lineemoji, #Box3 {
-    padding: 20px; /* Lägger till utrymme inuti boxarna */
-    text-align: center; /* Centrerar texten */
-    width: 400px; /* Ger varje box en specifik bredd */
+    padding: 20px; 
+    text-align: center; 
+    width: 400px; 
 }
 
 #lineemoji {
      border-right: 1px solid gray ;
      border-left: 1px solid gray ;
-}
+} 
+
 
 .sek5 h1 {
     text-align: center;
@@ -228,7 +237,7 @@ a {
 
 .sek5LR {
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     gap: 30px;
 }
 
@@ -246,21 +255,24 @@ a {
     height: auto;
 }
 
-.Procent{
-    display: flex;
+
+.Procent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates four equal-width columns */
+    justify-items: center; /* Centers each item horizontally */
+    gap: 50px; /* Adds space between the grid items */
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
 }
 
 .Procent p {
     font-size: large;
     margin: 0;
 }
+
 .bignumber {
     font-size: 60px;
     margin: 0;
+    color: #666666;
 }
 
 .Endmain {
@@ -270,6 +282,8 @@ a {
 }
 
 .footer {
+    padding-top: 60px;
+    border-top: 1px solid black;
     margin-top: 30PX;
     display: flex;
     justify-content: space-evenly;
