@@ -176,6 +176,10 @@ a {
     color: gray;
 }
 
+#Black {
+    color: black;
+}
+
 #rad10 {
     border-bottom: none;
     display: flex;
