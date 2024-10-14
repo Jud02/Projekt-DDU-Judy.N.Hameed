@@ -13,6 +13,7 @@ body {
 main {
     max-width: 1000px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 header{
@@ -29,20 +30,20 @@ header{
     right: 0; /* Align it to the right */
     background-color: white; /* Set the background color to white */
     z-index: 1000; /* Ensure it stays above other content */
-
-
-
 }
 
 #Barky {
     width: 100px;
     height: auto;
+
 }
+
 .left {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 
 .right{
     display: flex;
@@ -90,7 +91,6 @@ header a:hover {
 
 #sek1left{
     flex-basis: 50%;
-    width: 400px;
 }
 
 #imagesek1 {
@@ -106,32 +106,18 @@ header a:hover {
 .logor {
     padding: 15px;
 }
-.logorrad1 {
+.logorrad {
     display: flex;
     gap: 35px;
-    align-items: center;
-    justify-content: center; /* Centers horizontally */
+    justify-content: center; /* Centers horizontally */    
+    flex-wrap: wrap;
 
 }
 
-#imgrad1 {
+#imgrad {
     width: 100px;
-    height: auto;
 }
 
-#imgrad2 {
-    width: 90px;
-    height: auto;
-}
-
-.logorrad2 {
-    padding-top: 10px;
-    display: flex;
-    gap: 35px;
-    align-items: center;
-    justify-content: center; /* Centers horizontally */
-
-}
 
 .sek2 {
     margin: 100px auto;
@@ -166,7 +152,6 @@ header a:hover {
     margin: 100px auto;
 
 }
-
 
 #sek3rubrik {
     display: flex;
@@ -230,9 +215,6 @@ header a:hover {
     padding-bottom: 30px;
 }
 
-
-
-
 .Emojis {
     display: flex;
     text-align: center;
@@ -251,13 +233,9 @@ header a:hover {
      border-left: 1px solid gray ;
 } 
 
-.Learnmore {
-    border-bottom: 1px solid black;
-}
 
 .Learnmore:hover {
     color:#087fe7 ;
-    border-bottom: 1px solid #087fe7;
 }
 
 .sek5 h1 {
@@ -290,14 +268,18 @@ header a:hover {
     height: auto;
 }
 
-
 .Procent {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Creates four equal-width columns */
-    justify-items: center; /* Centers each item horizontally */
-    gap: 50px; /* Adds space between the grid items */
     text-align: center;
+    
 }
+
+.linesprocent {
+    border-left: 1px solid gray;
+    padding-left:0px 20px 20px 50px ;
+}
+
 
 .Procent p {
     font-size: large;
@@ -333,18 +315,20 @@ header a:hover {
     flex-direction: column; /* Arrange items in a column */
 }
 
+.minilista-wrapper{
+    display: flex;
+    gap: 100px;
+}
+
 .Words {
     margin-top: 8px; /* Optional: Adds some space between the links */
     text-decoration: none;
     color:#7f7f7f ;
-
 }
 
 .Words:hover{
     text-decoration: underline; /* Add underline on hover */
-
 }
-
 
 #apps {
     width: 30px;
@@ -355,3 +339,135 @@ header a:hover {
     width: 300px;
 }
 
+
+.mobile-nav  {
+    display: none; /* Hide mobile navigation by default */
+}
+
+
+@media (max-width: 600px) {
+
+    body{
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .left a {
+        display: none; /* Hide left navigation */
+    }
+    
+    .right {
+        display: none; /* Hide right navigation */
+    }
+    
+    
+    /* New mobile navigation */
+    .mobile-nav {
+        display: flex; /* Show as flex container */
+        justify-content: flex-end; /* Align to the right */
+        align-items: center; /* Center vertically */
+        padding: 10px; /* Padding */
+    }
+    
+    .mobile-nav img {
+        width: 30px; /* Set size for icons */
+    }
+
+    header {
+        position: static; /* Remove fixed positioning */
+        border-bottom: none; /* Remove bottom line */
+        padding: 0;
+        margin: 0;
+    }
+
+    .logor {
+        width: 460px;
+    }
+
+    #imgrad {
+        width: 80px; /* Mindre storlek på logorna för mobil */
+    }
+
+    
+
+    .sek1 {
+        display: flex;
+        flex-direction: column; /* Stack sek1 items vertically */
+        margin: 50px auto; /* Adjust margin for mobile */
+        text-align: center;
+        align-items: center;
+    }
+
+    #imagesek1 {
+        order: -1; /* Flyttar bilden över texten */
+    }
+
+
+    .sek2 {
+        display: flex;
+        flex-direction: column; /* Stack sek1 items vertically */
+        margin: 50px auto; /* Adjust margin for mobile */
+        align-items: center;
+        text-align: center;
+
+
+     }
+
+    .sek2 h1 {
+        font-size: 20px;
+    }
+
+    .lista3 {
+        max-width: 85%;
+        }
+
+    .Emojis {
+        display: flex; /* Behåll flex-display */
+        flex-direction: column; /* Ändra riktning till kolumn */
+        align-items: center; /* Centrera elementen horisontellt */
+    }
+
+    #lineemoji {
+        border-right:none;
+        border-left:none;
+   } 
+
+    .sek5LR {
+        flex-direction: column; /* Stack sek5 items vertically */
+    }
+
+    .Procent {
+        display: flex; /* Behåll flex-display */
+        flex-direction: column; /* Ändra riktning till kolumn */
+        gap: 35px;
+    }
+
+    .linesprocent {
+        border-left: none;
+    }
+
+
+    .footer {
+        flex-direction: column; /* Bredvid varandra på större skärmar */
+        padding: 10px;
+    }
+    #logofooter {
+        margin-top: 20px;
+    }
+    #Footer1 p {
+        margin-top: 0;
+    }
+
+    .apps{
+        margin-bottom: 0;
+    }
+
+    .minilista-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70px;
+    
+    }
+
+   
+}
