@@ -1,0 +1,25 @@
+.sek1 {
+    display: flex;
+    margin: 100px auto;
+}
+
+#sek1left{
+    flex-basis: 50%;
+}
+#sek1left h1 {
+    margin-bottom: 0;
+    width: 350px;
+    font-size: 40px;
+}
+#sek1left p{
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 19px;
+}
+#imagesek1 {
+    flex-basis: 50%;
+}
+#image1 {
+    width: 100%;
+}
+
