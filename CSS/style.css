@@ -492,11 +492,14 @@ header a:hover {
 
     #sek1left h1  {
         font-size: 45px ;
-        width: 450px;       
-    }
+        width: 512px;       
+        margin-top: 0;
+        }
 
     #sek1left p {
-        width: 480px;
+        width: 512px;
+        font-size: 18px;
+        margin-bottom: 27px;
     }
 
     #imagesek1 {
