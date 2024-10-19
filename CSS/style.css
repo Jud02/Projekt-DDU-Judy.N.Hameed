@@ -538,8 +538,9 @@ header a:hover {
     }
     
     #sek3rubrik p {
-        width: 94%; /* Låt paragrafen anpassa sig till full div-bredd */
-        font-size: 16px;
+        width: 518px; /* Låt paragrafen anpassa sig till full div-bredd */
+        font-size: 18px;
+        margin-top: 8px;
     }
     
     #sek3rubrik h2 {
