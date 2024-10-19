@@ -478,9 +478,7 @@ header a:hover {
 
     
 
-    #imgrad {
-        width: 80px; /* Mindre storlek på logorna för mobil */
-    }
+   
 
     .sek1 {
         display: flex;
@@ -505,6 +503,13 @@ header a:hover {
     #imagesek1 {
         order: -1; /* Flyttar bilden över texten */
         width: 470px;
+    } 
+    
+    .logor {
+        margin-top: 79px;
+    }
+    #imgrad {
+        width: 80px; /* Mindre storlek på logorna för mobil */
     }
 
 
